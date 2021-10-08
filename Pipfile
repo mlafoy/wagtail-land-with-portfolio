@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psycopg2-binary = "<2.9,>=2.8.6"
+wagtail = ">=2.11,<2.12"
+python-dotenv = "==0.15.0"
+django-extensions = "==3.1.0"
+djangorestframework = "==3.12.2"
+django-filter = "==2.4.0"
+Django = "<3.2,>=3.1"
+django-environ = "*"
+django-storages = "*"
+gunicorn = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

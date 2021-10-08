@@ -1,0 +1,405 @@
+@font-face {
+  font-family: 'Ilisarniq Light';
+  src: url('../fonts/Ilisarniq-Light.otf');   
+}
+@font-face {
+  font-family: 'Ilisarniq';
+  src: url('../fonts/Ilisarniq-Regular.otf');   
+}
+@font-face {
+  font-family: 'Publico Text';
+  src: url('../fonts/PublicoText-Roman-Web.ttf');   
+}
+
+
+.card__custom {
+  margin-bottom: 10px;
+}
+
+.card__thumb {
+  width: 172px;
+  height: 172px;
+  object-fit: cover;
+}
+
+.card__subtitle {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.ccss
+{
+    background: white;
+    font-family: Publico Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 69px;
+}
+
+.ab1{
+    background-color: black;
+    padding: 135px 0 100px;
+}
+
+.ab2{
+    font-family: 'Ilisarniq Light';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    width: 18%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.abcolor{
+  color: white;
+  font-family: 'Publico Text';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.team1{
+font-family: Rotunda;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+}
+
+
+.portfolio{
+font-family: Rotunda;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+}
+
+
+
+#mainNav .container-fluid{
+  padding: 0 40px;
+}
+nav.sticky{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  animation: stickySlideDown 0.5s ease;
+  background: rgb(255 255 255 / 40%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(12px);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+@keyframes stickySlideDown {
+0% {
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+.masthead h1{
+  font-family: 'Publico Text';
+  font-size: 60px;
+  line-height: 74px;
+}
+.masthead img{
+  max-width: 620px;
+}
+/* .founder,.essential,.generation{
+  position: relative;
+}
+.founder img{
+  position: absolute;
+  bottom: -20px;
+  left:-25px;
+}
+.essential img{
+  position: absolute;
+  bottom: -16px;
+  left: 9px;
+  width: 101%;
+}
+.generation img{
+  position: absolute ;
+  left: -11px;
+  top: -14px;
+  width: 460px;
+}
+.generation span{
+  position: relative;
+  z-index: 1;
+} */
+
+/* ---- About Section --- */
+.about-info{
+  display: flex;
+}
+.abcolor h5{
+  font-family: 'Publico Text';
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  max-width: 530px;
+}
+.abcolor p{
+  max-width: 530px;
+}
+
+
+/* --- Team Section --- */
+
+#team{
+  background-color: #F6F6F6;
+  padding: 127px 0;
+}
+#team .team1{
+  font-family: 'Ilisarniq Light';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  width: 18%;
+}
+.team-info{
+  text-align: left;
+  margin-right: 25px;
+  font-family: 'Publico Text';
+}
+.team-info h5{
+  text-decoration: underline;
+  font-family: 'Publico Text';
+  font-size: 20px;
+  line-height: 28px;
+}
+.team-info h6{
+  font-family: 'Publico Text';
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+}
+#team .ab2{
+  margin-top:0;
+}
+.team-details{
+  display: flex;
+}
+.portfolio-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.filter-button{
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Ilisarniq';
+  padding: 2px 10px;
+}
+.active-filter{
+  color:#000;
+  border-color: #000;
+}
+.filter-content{
+  padding: 0;
+}
+.filter-buttons .filter-button:last-child{
+  margin-right: 0;
+}
+.filter{
+  border-bottom: 1px solid #000;
+}
+.filter-content .filter:first-child{
+  border-top: 1px solid #000;
+}
+.lead .row{
+  margin: 0;
+}
+.filter-content .lead{
+  font-family: 'Publico Text';
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  color:#000
+}
+.company-info{
+  font-family: 'Ilisarniq';
+}
+.social-icon i{
+  font-size: 35px;
+}
+.social-icon span:last-child{
+  margin-left: 15px;
+}
+/*.list-group-item .row{
+  align-items: center;
+}*/
+
+/* Footer */
+.footer-logo{
+  text-align:left;
+}
+footer .footer-content{
+  text-align: left;
+  font-family: 'Publico Text';
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+footer .footer-content p{
+  margin-bottom: 0;
+}
+.copyright{
+  font-size: 16px;
+}
+footer a:hover{
+  text-decoration: none;
+  color:#E49F3E;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer.bg-black .container-fluid,
+#mainNav .container-fluid{max-width:1430px; }
+
+.list-group-flush > .list-group-item:hover{background-color:#f6f6f6;}
+.copyright {font-family: 'Ilisarniq Light'; }
+.MyGreY{width:172px;height:172px;background-color: #C4C4C4;margin:auto;}
+body .masthead{padding-top: 40px;}
+.filter-button.active-filter{font-family: 'Ilisarniq';}
+.filter-button{font-family: 'Ilisarniq Light';}
+.team-info h6{line-height: 10px;color: #000000;}
+.team-info h5 a{color: #000000;}
+.company-info{font-size:16px;}
+body .filter,
+body .filter-content .filter:first-child {border-color:#939090;margin:0;width:100% !important;}
+body .ab2{width:26.5%;font-family: 'Ilisarniq';font-weight: bold;}
+body .about-info .row.gx-5{margin:0;}
+.company-info .types_text{font-family: 'Ilisarniq Light';}
+.company-info .types_text a{font-family: 'Ilisarniq Light';color:#000;text-decoration:none;}
+body #mainNav .navbar-nav .nav-item .nav-link:hover{text-shadow: none;}
+
+/*@keyframes animatebottom 
+  {
+    0%   {bottom:-300px; opacity:0}
+    50%  {bottom:30px; opacity:0.8}
+    100% {bottom:0px; opacity:1}
+  }
+
+@keyframes firstanimatebottom 
+  {
+    0%   {bottom:-100px; opacity:0}
+    50%  {bottom:10px; opacity:0.8}
+    100% {bottom:0px; opacity:1}
+  }*/
+
+
+.team-details,
+body .masthead .text-lg-start{animation: firstanimatebottom 2s;transition-property: opacity,transform;position: relative;}
+body .about-info {animation: animatebottom 2s;transition-property: opacity,transform;position: relative;}
+.align-items{display:flex;align-items:center;flex-wrap:wrap;}
+.list-group-item.collapsed{cursor:pointer;}
+.social-icon a{display: inline-block;color:#000;}
+
+
+
+@media screen and (max-width: 767px)
+{
+  body .ab2{width:100%;}
+}
+
+
+
+.banner-span{
+  font-family: Publico Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: block;
+  text-align: left;
+  background-image: url(/static/assets/images/banner-back.png);
+  background-size: 72% auto;
+  background-position-y: 59px;
+  width: 620px;
+  background-repeat: no-repeat;
+  background-position-x: 75px;
+  padding-bottom: 200px;
+}
+
+.banner-container{
+  width: 100%;
+  /* height: 672px; */
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width:767px){
+  
+  .banner-span{
+    font-family: Publico Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    display: block;
+    text-align: left;
+    background-image: url(/static/assets/images/banner-back.png);
+    background-size: 64% auto;
+    background-position-y: 30px;
+    width: 320px;
+    background-repeat: no-repeat;
+    background-position-x: 54px;
+    padding-bottom: 10px;
+  }
+}
+.list-group-item .thumbnail{
+  display: inline;
+}
+
+
+.list-group-item .thumbnail-secondary{
+  display: none;
+}
+
+
+.list-group-item:hover .thumbnail{
+  display: none;
+}
+
+.portfolio-col {
+  width: 100% !important;
+}
+
+.list-group-item:hover .thumbnail-secondary{
+  display: inline;
+}
+
+
+
+
+
+
+

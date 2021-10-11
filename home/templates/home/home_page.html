@@ -154,10 +154,10 @@
              <!--Portfolio content-->                
              <div class="container filter-content"  data-aos="fade-up">
                {% for port in self.portfolio %}
-                <div class="row filter {{ port.industry }}" style="display: flex;">
+                <div class="row filter {{ port.value.industry }}" style="display: flex;">
                   <div class="col-sm-12 portfolio-col">
                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsible-area1" aria-expanded="false">
+                        <li class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsible-area{{ forloop.counter }}" aria-expanded="false">
                            <div class="row thumb-wrapper" style="display: flex;">
                               <div class="col-sm-4 col-md-4 col-2 col-lg-3 col-xl-3 thumbnail">                                 
                                  {% image port.value.thumbnail width-165 %}
@@ -167,7 +167,7 @@
                               </div>
                               <div class="col-sm-8 lead pl-5">
                                   {{port.value.title}} 
-                                 <div class="collapse" id="collapsible-area1">
+                                 <div class="collapse" id="collapsible-area{{ forloop.counter }}">
                                     <span class="d-block mt-3">
                                        {{port.value.body}}
                                     </span>
@@ -216,7 +216,7 @@
             <div class="col-md-6">
                <div class="text-white small footer-content">
                   <p>{{ settings.sitesettings.CompanySettings.address  }}</p>
-                  <p><a href="{{ settings.sitesettings.CompanySettings.email }}">{{ settings.sitesettings.CompanySettings.email  }}</a></p>
+                  <p><a href="mailto:{{ settings.sitesettings.CompanySettings.email }}">{{ settings.sitesettings.CompanySettings.email  }}</a></p>
                   <div class="mt-4 copyright">©2021 {{ settings.sitesettings.CompanySettings.name  }}</div>
                </div>
             </div>

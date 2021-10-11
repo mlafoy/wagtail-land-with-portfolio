@@ -192,7 +192,7 @@ nav.sticky{
 .portfolio-header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   margin-bottom: 90px;
 }
 .filter-button{
@@ -207,10 +207,14 @@ nav.sticky{
   border-color: #000;
 }
 .filter-content{
-  padding: 0;
+    width: 100%;
 }
-.filter-buttons .filter-button:last-child{
+.filter-buttons .filter-button:last-child{  
   margin-right: 0;
+}
+
+.footer-logo img{
+  width: 201px;
 }
 .filter{
   border-bottom: 1px solid #000;
@@ -286,7 +290,7 @@ body .masthead{padding-top: 40px;}
 .team-info h5 a{color: #000000;}
 .company-info{font-size:16px;}
 body .filter,
-body .filter-content .filter:first-child {border-color:#939090;margin:0;width:100% !important;}
+body .filter-content .filter:first-child {border-color:#939090;width:100% !important;}
 body .ab2{width:26.5%;font-family: 'Ilisarniq';font-weight: bold;}
 body .about-info .row.gx-5{margin:0;}
 .company-info .types_text{font-family: 'Ilisarniq Light';}
@@ -319,7 +323,7 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
 
 @media screen and (max-width: 767px)
 {
-  body .ab2{width:100%;}
+  body .ab2{width:100%;text-align: left;}  
 }
 
 
@@ -341,6 +345,10 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   background-repeat: no-repeat;
   background-position-x: 75px;
   padding-bottom: 200px;
+  padding-left: 0px !important;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-right: 0px !important;
 }
 
 .banner-container{
@@ -361,29 +369,47 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 36px;
     letter-spacing: -0.02em;
     color: #000000;
     display: block;
     text-align: left;
     background-image: url(/static/assets/images/banner-back.png);
-    background-size: 64% auto;
+    background-size: 68% auto;
     background-position-y: 30px;
     width: 320px;
     background-repeat: no-repeat;
-    background-position-x: 54px;
+    background-position-x: 43px;
     padding-bottom: 10px;
+    padding-left: 0px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 0px !important;
+  }
+
+  .list-group-item{
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
   }
 }
 .list-group-item .thumbnail{
   display: inline;
+  width: 24%;
 }
 
 
 .list-group-item .thumbnail-secondary{
   display: none;
+  width: 24%;
 }
 
+.company-info .types_text a:hover{
+  color: #E49F3E;
+}
+
+.team-info h5 a:hover{
+  color: #E49F3E;
+}
 
 .list-group-item:hover .thumbnail{
   display: none;
@@ -395,6 +421,34 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
 
 .list-group-item:hover .thumbnail-secondary{
   display: inline;
+}
+
+.left-wrap{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mobile-wrap-container{
+  
+}
+
+@media only screen and (max-width:767px){
+  .mobile-wrap-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .left-wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card__custom{
+    text-align: left;
+  }
+
+  .card__custom img{
+    width: 300px;
+    height: auto;    
+  }
 }
 
 

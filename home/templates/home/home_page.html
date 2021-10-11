@@ -9,18 +9,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>PENTAS VENTURES - Site</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-        <!-- Bootstrap icons-->
-        <link rel="stylesheet" href="{% static '/assets/css/bootstrap-icons.css' %}">        
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">                
         <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com/">
-
-        
-        <link rel="stylesheet" href="{% static '/assets/css/all.min.css' %}" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link href="{% static '/assets/css/css2' %}" rel="stylesheet">
-        <link href="{% static '/assets/css/css2(1)' %}" rel="stylesheet">
-        <link href="{% static '/assets/css/css2(2)' %}" rel="stylesheet">
-        <link href="{% static '/assets/css/all.css' %}" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com/">      
 
         <link href="{% static '/assets/css/styles.css' %}" rel="stylesheet">
         <link href="{% static '/assets/css/customcss.css' %}" rel="stylesheet">
@@ -29,10 +20,9 @@
         <link rel="stylesheet" href="{% static '/assets/css/s-styles.css' %}" />
         <link rel="stylesheet" href="{% static '/assets/css/aos.css' %}" />
 
-        <script src="{% static '/assets/js/jquery.min.js.download' %}"></script>
-        <script src="{% static '/assets/js/popper.min.js.download' %}"></script>
-        <script src="{% static '/assets/js/bootstrap.min.js.download' %}"></script>
-        <script src="{% static '/assets/js/jquery-1.11.1.min.js.download' %}"></script>
+        <script src="{% static '/assets/js/jquery.min.js' %}"></script>
+        <script src="{% static '/assets/js/popper.min.js' %}"></script>
+        <script src="{% static '/assets/js/bootstrap.min.js' %}"></script>        
 
 <style>
     .d-none {
@@ -72,18 +62,13 @@
        </div>
     </nav>
     <!-- Mashead header-->
-    <header class="masthead ccss ">
-       <div class="container px-5">
-          <div class="row gx-5 align-items-center">
-            <div class="col-lg-12">
+    <header class="masthead ccss">
+       <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
                <!-- Mashead text and app badges-->
-               <div class="banner-container" data-aos="fade-up">
-                  <!-- <h1 class="display-3  mb-4 " style="text-align: left;">
-                       We help <span class="founder">founders<img src="assets/images/founders.png"></span> <br>
-                        build essential  products<br>
-                        & services for <br> the <span class="generation"><span>next generation.</span> <img src="assets/images/next-generation.png"></span> 
-                   </h1> -->
-                   <span class="banner-span">We help founders<br/> build essential products<br/> and services for<br/> the next generation.</span>                    
+               <div class="banner-container" data-aos="fade-up">                  
+                   <span class="banner-span  left-wrap">We help founders<br/> build essential products<br/> and services for<br/> the next generation.</span>                    
                </div>
             </div>
           </div>
@@ -91,30 +76,27 @@
     </header>
     <!-- About Us Section-->
     <section id="about" class="ab1">
-       <div class="container px-4">
-           <div class="about-info" data-aos="fade-up">
-            <div class="ab2 text-white float-left">{{self.about_us_title}}</div>
-            <div class="row gx-5 ">
-               <div class="float-right  mb-lg-0 ">
-                  <div>
-                     <div class="abcolor ">
-                        <h5>{{self.about_us_bold}}</h5>
-                        <br>
-                        <p class="lead  mb-5 mb-lg-0">{{ self.about_us_small }}</p>
-                     </div>
+       <div class="container">
+           <div class="about-info row" data-aos="fade-up">
+            <div class="ab2 text-white float-left left-wrap">{{self.about_us_title}}</div>            
+            <div class="float-right  mb-lg-0 mobile-wrap-container">
+               <div>
+                  <div class="abcolor ">
+                     <h5>{{self.about_us_bold}}</h5>
+                     <br>
+                     <p class="lead  mb-5 mb-lg-0">{{ self.about_us_small }}</p>
                   </div>
                </div>
             </div>
-           </div>
-          
+            </div>
        </div>
     </section>
     <!-- Basic features section-->
     <section class="bg-light" id="team">
-       <div class="container px-5">
-          <div class="row gx-5" data-aos="fade-up">
-            <div class="ab2 float-left">Team</div>
-            <div class="team-details">
+       <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="ab2 float-left left-wrap">Team</div>
+            <div class="team-details mobile-wrap-container">
                {% for team in self.team %}
                <div class="team-info">
                   <div class="card__custom">
@@ -134,14 +116,13 @@
     </section>
     <!-- Portfolio section-->
     <section id="portfolio">
-       <div class="container px-5">
-          
-          <div class="row gx-5 align-items-center">
+       <div class="container">          
+          <div class="row align-items-center">
              <div class="col-12 text-center mb-2">
                <div class="portfolio-header" data-aos="fade-up">
-                  <div class="ab2 float-left">Portfolio</div>
+                  <div class="ab2 float-left left-wrap ">Portfolio</div>
                   <!--Portfolio buttons-->
-                  <div class="filter-buttons">
+                  <div class="filter-buttons mobile-wrap-container">
                      <button class="btn btn-outline-primary filter-button active-filter" data-filter="all">All Companies</button>
                      <button class="btn btn-outline-primary filter-button" data-filter="Commerce">Commerce</button>
                      <button class="btn btn-outline-primary filter-button" data-filter="Education">Education</button>
@@ -152,12 +133,12 @@
                 
              </div>
              <!--Portfolio content-->                
-             <div class="container filter-content"  data-aos="fade-up">
+             <div class="filter-content left-wrap "  data-aos="fade-up">
                {% for port in self.portfolio %}
-                <div class="row filter {{ port.industry }}" style="display: flex;">
-                  <div class="col-sm-12 portfolio-col">
+                <div class="filter {{ port.value.industry }}" style="display: flex;">
+                  <div class="col-sm-12 portfolio-col ">
                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsible-area1" aria-expanded="false">
+                        <li class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsible-area{{ forloop.counter }}" aria-expanded="false">
                            <div class="row thumb-wrapper" style="display: flex;">
                               <div class="col-sm-4 col-md-4 col-2 col-lg-3 col-xl-3 thumbnail">                                 
                                  {% image port.value.thumbnail width-165 %}
@@ -167,7 +148,7 @@
                               </div>
                               <div class="col-sm-8 lead pl-5">
                                   {{port.value.title}} 
-                                 <div class="collapse" id="collapsible-area1">
+                                 <div class="collapse" id="collapsible-area{{ forloop.counter }}">
                                     <span class="d-block mt-3">
                                        {{port.value.body}}
                                     </span>
@@ -216,7 +197,7 @@
             <div class="col-md-6">
                <div class="text-white small footer-content">
                   <p>{{ settings.sitesettings.CompanySettings.address  }}</p>
-                  <p><a href="{{ settings.sitesettings.CompanySettings.email }}">{{ settings.sitesettings.CompanySettings.email  }}</a></p>
+                  <p><a href="mailto:{{ settings.sitesettings.CompanySettings.email }}">{{ settings.sitesettings.CompanySettings.email  }}</a></p>
                   <div class="mt-4 copyright">©2021 {{ settings.sitesettings.CompanySettings.name  }}</div>
                </div>
             </div>
@@ -236,10 +217,7 @@
        </div>
     </div>
     <!-- Bootstrap core JS-->
-    <script src="{% static '/assets/js/bootstrap.bundle.min.js' %}"></script>
-    <!-- Core theme JS-->
-
-    <script src="{% static '/assets/js/sb-forms-latest.js' %}"></script>
+    <script src="{% static '/assets/js/bootstrap.bundle.min.js' %}"></script>    
     <script src="{% static '/assets/js/custom.js' %}"></script>
     <script src="{% static 'assets/js/aos.js' %}"></script>
     

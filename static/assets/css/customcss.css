@@ -450,25 +450,6 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   }
 }
 
-
-@media only screen and (max-width:767px){
-  .mobile-wrap-container{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .left-wrap{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .card__custom{
-    text-align: left;
-  }
-
-  .card__custom img{ 
-    height: auto;    
-  }
-}
-
 @media only screen and (max-width:600px){
   .card__custom img{ 
     width: 300px;    

@@ -112,30 +112,6 @@ nav.sticky{
 .masthead img{
   max-width: 620px;
 }
-/* .founder,.essential,.generation{
-  position: relative;
-}
-.founder img{
-  position: absolute;
-  bottom: -20px;
-  left:-25px;
-}
-.essential img{
-  position: absolute;
-  bottom: -16px;
-  left: 9px;
-  width: 101%;
-}
-.generation img{
-  position: absolute ;
-  left: -11px;
-  top: -14px;
-  width: 460px;
-}
-.generation span{
-  position: relative;
-  z-index: 1;
-} */
 
 /* ---- About Section --- */
 .about-info{
@@ -166,8 +142,12 @@ nav.sticky{
   line-height: 20px;
   width: 18%;
 }
+.team-details{
+  display: block;
+}
 .team-info{
   text-align: left;
+  display: inline-block;
   margin-right: 25px;
   font-family: 'Publico Text';
 }
@@ -182,6 +162,11 @@ nav.sticky{
   font-size: 20px;
   line-height: 28px;
   font-style: normal;
+}
+
+.team-info img{
+  width: 172px;
+  height: 172px;
 }
 #team .ab2{
   margin-top:0;
@@ -297,21 +282,6 @@ body .about-info .row.gx-5{margin:0;}
 .company-info .types_text a{font-family: 'Ilisarniq Light';color:#000;text-decoration:none;}
 body #mainNav .navbar-nav .nav-item .nav-link:hover{text-shadow: none;}
 
-/*@keyframes animatebottom 
-  {
-    0%   {bottom:-300px; opacity:0}
-    50%  {bottom:30px; opacity:0.8}
-    100% {bottom:0px; opacity:1}
-  }
-
-@keyframes firstanimatebottom 
-  {
-    0%   {bottom:-100px; opacity:0}
-    50%  {bottom:10px; opacity:0.8}
-    100% {bottom:0px; opacity:1}
-  }*/
-
-
 .team-details,
 body .masthead .text-lg-start{animation: firstanimatebottom 2s;transition-property: opacity,transform;position: relative;}
 body .about-info {animation: animatebottom 2s;transition-property: opacity,transform;position: relative;}
@@ -319,41 +289,14 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
 .list-group-item.collapsed{cursor:pointer;}
 .social-icon a{display: inline-block;color:#000;}
 
-
-
 @media screen and (max-width: 767px)
 {
   body .ab2{width:100%;text-align: left;}  
 }
 
-
-
-.banner-span{
-  font-family: Publico Text;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 73px;
-  letter-spacing: -0.02em;
-  color: #000000;
-  display: block;
-  text-align: left;
-  background-image: url(/static/assets/images/banner-back.png);
-  background-size: 72% auto;
-  background-position-y: 59px;
-  width: 620px;
-  background-repeat: no-repeat;
-  background-position-x: 75px;
-  padding-bottom: 200px;
-  padding-left: 0px !important;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-right: 0px !important;
-}
-
 .banner-container{
   width: 100%;
-  /* height: 672px; */
+  height: 450px;
   background: rgba(255,255,255,1);
   opacity: 1;
   position: relative;
@@ -362,45 +305,50 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   overflow: hidden;
 }
 
-@media only screen and (max-width:767px){
-  
-  .banner-span{
-    font-family: Publico Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    color: #000000;
-    display: block;
-    text-align: left;
-    background-image: url(/static/assets/images/banner-back.png);
-    background-size: 68% auto;
-    background-position-y: 30px;
-    width: 320px;
-    background-repeat: no-repeat;
-    background-position-x: 43px;
-    padding-bottom: 10px;
-    padding-left: 0px !important;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-right: 0px !important;
-  }
-
-  .list-group-item{
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-  }
+.banner-container .b1{
+  position: absolute;
+  top: 58px;
+  left: 234px;
 }
+
+.banner-container .b2{
+  top: 135px;
+  position: absolute;
+  left: 179px;
+}
+
+.banner-container .b3{
+  position: absolute;
+  top: 207px;
+  left: 117px;
+}
+
+.banner-container .banner-span{
+  font-family: Publico Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: block;
+  text-align: left;  
+  width: 620px;  
+  padding-bottom: 200px;
+  height: 350px;
+  z-index: 1;
+  position: absolute;
+}
+
 .list-group-item .thumbnail{
   display: inline;
-  width: 24%;
+  width: 27%;
 }
 
 
 .list-group-item .thumbnail-secondary{
   display: none;
-  width: 24%;
+  width: 27%;
 }
 
 .company-info .types_text a:hover{
@@ -429,7 +377,8 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
 }
 
 .mobile-wrap-container{
-  
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media only screen and (max-width:767px){
@@ -455,7 +404,6 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
     width: 300px;    
   }
 }
-
 
 
 

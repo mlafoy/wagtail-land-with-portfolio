@@ -1,4 +1,13 @@
 @media only screen and (max-width:991px){
+    .filter-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 100%;
+    }
+    .filter-button{
+        margin-top: 15px;
+    }
     #mainNav .container-fluid{
         padding: 0 20px;
     }
@@ -63,7 +72,7 @@
     }
     .ab2{
         margin-bottom: 40px;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
     .about-info{
@@ -85,16 +94,18 @@
         width: 100%;
     }
     .team-details{
-        justify-content: center;
+        justify-content: left;
         width: 100%;
     }
     .team-details .team-info:last-child{
         margin-right: 0;
     }
+    
     .portfolio-header{
         margin-bottom: 40px;
     }
     .list-group-item img{
+        height: auto;
         max-width: 80%;
     }
     .company-info{
@@ -114,8 +125,38 @@
     .abcolor h5,.abcolor p{
         max-width: 100%;
     }
+
+    
+    .left-wrap{
+        padding-left: 40px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-right: 40px !important;
+    }
+
+    .mobile-wrap-container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 @media only screen and (max-width:767px){
+
+    
+    .left-wrap{
+        padding-left: 20px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-right: 20px !important;
+    }
+
+    .mobile-wrap-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .list-group-item{
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    }
     .masthead img{
         max-width: 400px;
     }
@@ -161,6 +202,15 @@
     #team{
         padding: 60px 0;
     }
+    .filter-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 100%;
+    }
+    .filter-button{
+        margin-top: 15px;
+    }
 }
 @media only screen and (max-width:600px){
     .team-details{
@@ -193,6 +243,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
+        width: 100%;
     }
     .filter-button{
         margin-top: 15px;
@@ -213,5 +264,46 @@
     }
     .copyright{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .banner-container {
+        height: 160px;
+    }
+    .banner-container .banner-span{
+        font-family: Publico Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #000000;
+        display: block;
+        text-align: left;        
+        width: 320px;             
+        height: 350px;
+        z-index: 1;
+        position: absolute;
+    }
+    .banner-container .b1 {
+        position: absolute;
+        top: 29px;
+        left: 140px;
+        width: 149px;
+    }
+
+    .banner-container .b2 {
+        top: 68px;
+        position: absolute;
+        left: 114px;
+        width: 127px;
+    }
+    
+    .banner-container .b3 {
+        position: absolute;
+        top: 101px;
+        left: 83px;
+        width: 219px;
     }
 }

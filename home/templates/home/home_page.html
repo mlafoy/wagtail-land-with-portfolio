@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>PENTAS VENTURES - Site</title>
+        <title>PENTAS VENTURES</title>
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">                
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com/">      
@@ -67,8 +67,11 @@
           <div class="row align-items-center">
             <div class="col-12">
                <!-- Mashead text and app badges-->
-               <div class="banner-container" data-aos="fade-up">                  
-                   <span class="banner-span  left-wrap">We help founders<br/> build essential products<br/> and services for<br/> the next generation.</span>                    
+               <div class="banner-container left-wrap">                  
+                   <span class="banner-span  "  data-aos="fade-in">We help founders<br/> build essential products<br/> and services for<br/> the next generation.</span>                    
+                   <img src="{% static '/assets/images/b1.png' %}" alt="b1" class="b1"  data-aos="fade-in" data-aos-delay="200"/>
+                   <img src="{% static '/assets/images/b2.png' %}" alt="b2" class="b2"  data-aos="fade-in" data-aos-delay="400"/>
+                   <img src="{% static '/assets/images/b3.png' %}" alt="b3" class="b3"  data-aos="fade-in" data-aos-delay="600"/>
                </div>
             </div>
           </div>
@@ -102,7 +105,7 @@
                   <div class="card__custom">
                      <!-- <img src="assets/images/partner1.jpg" alt="Person Image" class="card__thumb d-block mx-auto"> -->
                      <!-- <div class="MyGreY"></div> -->
-                     {% image team.value.image fill-172x172 %}
+                     {% image team.value.image fill-300x300 %}
                      <h5 class="card__title d-block  mt-4"><a href="{{ team.value.link }}">{{ team.value.name }}</a> </h5>
                      <h6 class="card__subtitle d-block">{{ team.value.title }}</h6>
                   </div>

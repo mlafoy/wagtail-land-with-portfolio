@@ -3,13 +3,23 @@
 <!-- saved from url=(0022)http://localhost:8000/ -->
 <html lang="en">
    <head>
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>PENTAS VENTURES</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">                
+      <title>PENTAS VENTURES</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">      
+      <meta name="title" content="Pentas Ventures">
+      <meta name="description" content="Pentas Ventures is a NYC-based, early stage venture capital fund that invests in next generation consumer brands.">
+      <meta name="keywords" content="Pentas Ventures, Venture Capital, NYC, VC">
+      <meta name="robots" content="index, nofollow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="5 days">
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Pentas Ventures" />
+      <meta property="og:url" content="https://pentasventures.com/" />
+      <meta property="og:site_name" content="Pentas Ventures" />
+      
+        <link rel="icon" href="{% static '/assets/images/favicon.png' %}">                
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com/">      
 
@@ -37,7 +47,7 @@
     }
 </style>
 </head>
-<body id="page-top" data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+<body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
        <div class="container-fluid">
@@ -105,7 +115,8 @@
                   <div class="card__custom">
                      <!-- <img src="assets/images/partner1.jpg" alt="Person Image" class="card__thumb d-block mx-auto"> -->
                      <!-- <div class="MyGreY"></div> -->
-                     {% image team.value.image fill-300x300 %}
+                     {% image team.value.image fill-300x300 class="team-image" %}
+                     {% image team.value.image_secondary fill-300x300 class="team-image-hover" %}
                      <h5 class="card__title d-block  mt-4"><a href="{{ team.value.link }}">{{ team.value.name }}</a> </h5>
                      <h6 class="card__subtitle d-block">{{ team.value.title }}</h6>
                   </div>
@@ -127,10 +138,9 @@
                   <!--Portfolio buttons-->
                   <div class="filter-buttons mobile-wrap-container">
                      <button class="btn btn-outline-primary filter-button active-filter" data-filter="all">All Companies</button>
-                     <button class="btn btn-outline-primary filter-button" data-filter="Commerce">Commerce</button>
-                     <button class="btn btn-outline-primary filter-button" data-filter="Education">Education</button>
-                     <button class="btn btn-outline-primary filter-button" data-filter="Health">Health</button>
-                     <button class="btn btn-outline-primary filter-button" data-filter="Entertainment">Entertainment</button>
+                     {% for cat in categories %}
+                        <button class="btn btn-outline-primary filter-button" data-filter="{{ cat.name }}">{{ cat.name }}</button>
+                     {% endfor %}
                   </div>
                </div>
                 

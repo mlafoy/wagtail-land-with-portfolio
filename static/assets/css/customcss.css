@@ -165,8 +165,8 @@ nav.sticky{
 }
 
 .team-info img{
-  width: 172px;
-  height: 172px;
+  width: 225px;
+  height: 225px;
 }
 #team .ab2{
   margin-top:0;
@@ -340,6 +340,25 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   position: absolute;
 }
 
+.team-info .team-image{
+  display: inline;  
+}
+
+
+.team-info .team-image-hover{
+  display: none;  
+}
+
+.team-info:hover .team-image{
+  display: none;  
+}
+
+
+.team-info:hover .team-image-hover{
+  display: inline;  
+}
+
+
 .list-group-item .thumbnail{
   display: inline;
   width: 27%;
@@ -350,6 +369,8 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   display: none;
   width: 27%;
 }
+
+
 
 .company-info .types_text a:hover{
   color: #E49F3E;

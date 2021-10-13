@@ -1,4 +1,16 @@
+@media only screen and (max-width:1149px){
+    .ab2{
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width:991px){
+
+   
+    .team-info img{
+        width: 172px;
+        height: 172px;
+    }
     .filter-buttons{
         display: flex;
         flex-wrap: wrap;

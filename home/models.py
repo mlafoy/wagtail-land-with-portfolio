@@ -10,11 +10,14 @@ from wagtail.images.blocks import ImageChooserBlock
 
 from wagtail.snippets.models import register_snippet
 
+from wagtail.snippets.blocks import SnippetChooserBlock
+
 
 
 
 class TeamBlock(blocks.StructBlock):
     image = ImageChooserBlock()
+    image_secondary = ImageChooserBlock()
     name = blocks.TextBlock(required=False)
     title = blocks.TextBlock(required=False)
     link = blocks.URLBlock(required=False)
@@ -36,7 +39,14 @@ class PortfolioBlock(blocks.StructBlock):
     website = blocks.URLBlock(required=False)
     linkedin = blocks.URLBlock(required=False)
     twitter = blocks.URLBlock(required=False)
-    industry = blocks.ChoiceBlock(required=False, choices=PORTFOLIO_CHOICES)
+    industry = SnippetChooserBlock(required=True, target_model='home.industry')
+
+@register_snippet
+class Industry(models.Model):
+    name = models.CharField(max_length=30, unique=True)
+
+    def __str__(self):
+        return self.name
 
 
 class HomePage(Page):
@@ -78,10 +88,10 @@ class HomePage(Page):
         StreamFieldPanel("portfolio"),
     ]
 
-    # def get_context(self, request, *args, **kwargs):
-    #     context = super().get_context(request, *args, **kwargs)
-    #     context["portfolios"] = Portfolio.objects.all()
-    #     return context
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        context["categories"] = Industry.objects.all()
+        return context
 
 
 # @register_snippet

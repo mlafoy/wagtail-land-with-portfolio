@@ -124,9 +124,9 @@
                 
              </div>
              <!--Portfolio content-->                
-             <div class="filter-content left-wrap "  >
+             <div class="filter-content left-wrap "   data-aos="fade-up" >
                {% for port in self.portfolio %}
-                <div class="filter" filter-data="{{ port.value.industry }}" style="display: flex;"  data-aos="fade-up">
+                <div class="filter" filter-data="{{ port.value.industry }}" style="display: flex;">
                   <div class="col-sm-12 portfolio-col ">
                      <ul class="list-group list-group-flush">
                         <li class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsible-area{{ forloop.counter }}" aria-expanded="false">

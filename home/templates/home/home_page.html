@@ -154,16 +154,20 @@
                                        </div>
                                        <div class="col-sm-4 ">
                                           <div class="social-icon">
-                                            <span class="inline-block">
+                                             {% if port.value.linkedin != "" %}
+                                               <span class="inline-block">                                               
                                                  <a href="{{ port.value.linkedin }}" target="_blank">
                                                     <img src="{% static '/assets/images/linkedin.png' %}" />
                                                    </a>                                                    
                                                </span>
+                                             {% endif %}
+                                             {% if port.value.twitter != "" %}
                                                <span class="inline-block ml-4">
                                                    <a href="{{ port.value.twitter }}" target="_blank">
                                                       <img src="{% static '/assets/images/twitter.png' %}" />
                                                    </a>
                                                </span>
+                                               {% endif %}
                                           </div>                                          
                                        </div>
                                     </div>

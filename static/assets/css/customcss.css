@@ -713,6 +713,47 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   }
 }
 
+@media only screen and (max-width:450px){
+  .banner-container {
+    height: 200px;
+  }
+  .banner-container .banner-span{
+      font-family: Publico Text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: -0.02em;
+      color: #000000;
+      display: block;
+      text-align: left;        
+      width: 320px;             
+      height: 350px;
+      z-index: 1;
+      position: absolute;
+  }
+  .banner-container .b1 {
+      position: absolute;
+      top: 29px;
+      left: 140px;
+      width: 149px;
+  }
+
+  .banner-container .b2 {
+      top: 68px;
+      position: absolute;
+      left: 114px;
+      width: 127px;
+  }
+
+  .banner-container .b3 {
+      position: absolute;
+      top: 101px;
+      left: 83px;
+      width: 219px;
+  }
+}
+
 @media only screen and (max-width:375px){
   .banner-container {
       height: 200px;

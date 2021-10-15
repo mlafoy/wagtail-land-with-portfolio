@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'Ilisarniq Light';
   src: url('../fonts/Ilisarniq-Light.otf');   
+  font-display: swap;
 }
 @font-face {
   font-family: 'Ilisarniq';
   src: url('../fonts/Ilisarniq-Regular.otf');   
+  font-display: swap;
 }
 @font-face {
   font-family: 'Publico Text';
   src: url('../fonts/PublicoText-Roman-Web.ttf');   
+  font-display: swap;
 }
 
 

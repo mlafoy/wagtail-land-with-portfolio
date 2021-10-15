@@ -195,6 +195,7 @@ nav.sticky{
     width: 100%;
 }
 .filter-buttons{
+  width: 73.5%;
   text-align: left;
 }
 
@@ -433,6 +434,10 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
 @media only screen and (max-width:1149px){
   .ab2{
       margin-bottom: 20px;
+  }
+  .team-info img{
+    width: 172px;
+    height: 172px;
   }
 }
 

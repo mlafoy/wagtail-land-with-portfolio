@@ -21,9 +21,7 @@
       
         <link rel="icon" href="{% static '/assets/images/favicon.png' %}">                        
         
-        <!-- <link href="{% static '/assets/css/style.min.css' %}" rel="stylesheet"> -->
-         <link rel="preload" href="{% static '/assets/css/style.min.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-         <noscript><link rel="stylesheet" href="{% static '/assets/css/style.min.css' %}"></noscript>
+        
         <link href="{% static '/assets/css/custom.min.css' %}" rel="stylesheet">        
         
         <link rel="stylesheet" href="{% static '/assets/css/s-styles.css' %}" />
@@ -229,5 +227,16 @@
       AOS.init({
         easing: 'ease-in-out-sine'
       });
+      function loadStyleSheet(src){
+         if (document.createStyleSheet) document.createStyleSheet(src);
+         else {
+               var stylesheet = document.createElement('link');
+               stylesheet.href = src;
+               stylesheet.rel = 'stylesheet';
+               stylesheet.type = 'text/css';
+               document.getElementsByTagName('head')[0].appendChild(stylesheet);
+         }
+      }
+      loadStyleSheet("{% static '/assets/css/style.min.css' %}");
     </script>
  </body>

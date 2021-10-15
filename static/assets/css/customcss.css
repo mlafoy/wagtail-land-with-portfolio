@@ -735,22 +735,22 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
   .banner-container .b1 {
       position: absolute;
       top: 29px;
-      left: 140px;
+      left: 119px;
       width: 149px;
   }
 
   .banner-container .b2 {
-      top: 68px;
-      position: absolute;
-      left: 114px;
-      width: 127px;
+    top: 68px;
+    position: absolute;
+    left: 92px;
+    width: 127px;
   }
 
   .banner-container .b3 {
-      position: absolute;
-      top: 101px;
-      left: 83px;
-      width: 219px;
+    position: absolute;
+    top: 101px;
+    left: 62px;
+    width: 219px;
   }
 }
 
@@ -774,25 +774,25 @@ body .about-info {animation: animatebottom 2s;transition-property: opacity,trans
       position: absolute;
   }
   .banner-container .b1 {
-      position: absolute;
-      top: 29px;
-      left: 140px;
-      width: 149px;
-  }
+    position: absolute;
+    top: 29px;
+    left: 119px;
+    width: 149px;
+}
 
-  .banner-container .b2 {
-      top: 68px;
-      position: absolute;
-      left: 114px;
-      width: 127px;
-  }
-  
-  .banner-container .b3 {
-      position: absolute;
-      top: 101px;
-      left: 83px;
-      width: 219px;
-  }
+.banner-container .b2 {
+  top: 68px;
+  position: absolute;
+  left: 92px;
+  width: 127px;
+}
+
+.banner-container .b3 {
+  position: absolute;
+  top: 101px;
+  left: 62px;
+  width: 219px;
+}
 }
 
 
